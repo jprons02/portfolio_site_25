@@ -1,19 +1,20 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://rjshkhr.github.io/cleanfolio',
+  homepage: '/',
   title: 'JS.',
 }
 
 const about = {
   // all the properties are optional - can be left empty or deleted
-  name: 'John Smith',
-  role: 'Front End Engineer',
+  name: 'Joseph Ronselli',
+  role: 'Full Stack Web Developer',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-  resume: 'https://example.com',
+    'Full-stack web developer with 10+ years of experience, including 5 years specializing in building scalable applications using React and AWS. Skilled in designing, developing, and deploying modern web solutions.',
+  resume:
+    'https://drive.google.com/file/d/19LXx_SgS2KuuHdWPmHFWsVumUgRRGq9W/view?usp=sharing',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/joseph-ronselli/',
+    github: 'https://github.com/jprons02',
   },
 }
 
