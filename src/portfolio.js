@@ -22,47 +22,92 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'Dashboard Demo',
     description:
       'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    stack: ['Vue', 'Vuetify', 'GraphQL', 'DynamoDB', 'AWS Amplify', 'Vitest'],
+    sourceCode: 'https://github.com/jprons02/demo-dashboard',
+    livePreview: 'https://staging.d1olp46bqvs6ps.amplifyapp.com/login',
   },
   {
-    name: 'Project 2',
+    name: 'React Website',
     description:
       'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    stack: [
+      'React',
+      'Material UI',
+      'Mailchimp API',
+      'S3',
+      'Cloudfront',
+      'Lambda',
+      'API Gateway',
+      'SES',
+    ],
+    sourceCode: 'https://github.com/jprons02/micc-react',
+    livePreview: 'https://staging.d2uj4k1n7yskfo.amplifyapp.com/',
   },
   {
-    name: 'Project 3',
+    name: 'Utility App',
     description:
       'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    stack: [
+      'React',
+      'Redux',
+      'NodeJS',
+      'Express',
+      'MongoDB',
+      'Dropbox API',
+      'Semantic UI React',
+    ],
+    sourceCode: 'https://github.com/jprons02/mapa',
+    // livePreview: 'https://github.com',
   },
 ]
 
-const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Redux',
-  'SASS',
-  'Material UI',
-  'Git',
-  'CI/CD',
-  'Jest',
-  'Enzyme',
-]
+const skills = {
+  frontend: [
+    'React',
+    'Redux',
+    'Context API',
+    'Vue',
+    'Javascript',
+    'TypeScript',
+    'HTML',
+    'CSS',
+    'SASS',
+    'Material UI',
+    'Vuetify',
+    'Semantic UI',
+    'Bootstrap',
+  ],
+  backend: [
+    'Node.js',
+    'Express',
+    'SQL',
+    'GraphQL',
+    'MongoDB',
+    'DynamoDB',
+    'AWS Lambda',
+    'AWS API Gateway',
+    'AWS Appsync',
+    'AWS Amplify',
+    'AWS S3',
+    'AWS Cloudfront',
+    'AWS SES',
+  ],
+  tools: [
+    'Git',
+    'Vitest',
+    'VS Code',
+    'Postman',
+    'Figma',
+    'Chrome Developer Tools',
+    'SQL Developer',
+    'Adobe Photoshop',
+    'Wordpress',
+    'Wix',
+  ],
+}
 
 const contact = {
   // email is optional - if left empty Contact section won't show up

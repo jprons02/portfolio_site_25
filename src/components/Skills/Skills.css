@@ -1,5 +1,5 @@
 .skills__list {
-  max-width: 450px;
+  max-width: 600px;
   width: 95%;
   margin: 0 auto;
   display: flex;
@@ -9,4 +9,49 @@
 
 .skills__list-item {
   margin: 0.5em;
+}
+
+.skills__toggle {
+  margin-bottom: 2.5em;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.skills__toggle .section__title {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  .skills__toggle .section__title {
+    font-size: 18px;
+  }
+}
+
+.skills__toggle-btn {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  color: var(--clr-primary);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.skills__toggle-btn::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Slightly below the text */
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--clr-primary);
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
+.skills__toggle-btn.active::after {
+  transform: scaleX(1);
 }
