@@ -24,7 +24,7 @@ const projects = [
   {
     name: 'Dashboard Demo',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'This business dashboard was built with a modern Vue 3 stack to demonstrate a full-featured data-driven admin panel using AWS AppSync and DynamoDB with GraphQL.',
     stack: ['Vue', 'Vuetify', 'GraphQL', 'DynamoDB', 'AWS Amplify', 'Vitest'],
     sourceCode: 'https://github.com/jprons02/demo-dashboard',
     livePreview: 'https://staging.d1olp46bqvs6ps.amplifyapp.com/login',
@@ -32,7 +32,7 @@ const projects = [
   {
     name: 'React Website',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'This website was built using React and Material UI with a serverless AWS backend (Lambda, API Gateway, S3, CloudFront, SES) and integrates the Mailchimp API for marketing automation.',
     stack: [
       'React',
       'Material UI',
@@ -49,7 +49,7 @@ const projects = [
   {
     name: 'Utility App',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'This utility app, built with the MERN stack and styled with Semantic UI React, allows login-based updates to the jackpots page, integrates with the Dropbox API for media access, and displays Google Analytics reports.',
     stack: [
       'React',
       'Redux',
