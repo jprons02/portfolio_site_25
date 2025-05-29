@@ -1,4 +1,5 @@
 import { useContext } from 'react'
+import { Divider } from '@material-ui/core'
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import About from './components/About/About'
@@ -18,6 +19,15 @@ const App = () => {
 
       <main>
         <About />
+        <Divider
+          style={{
+            marginTop: '50px',
+            maxWidth: '80%',
+            width: '660px',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          }}
+        />
         <Projects />
         <Skills />
         <Contact />

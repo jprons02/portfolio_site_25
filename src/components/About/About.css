@@ -17,6 +17,12 @@
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .about__desc {
+    text-align: left;
+  }
+}
+
 .about__desc,
 .about__contact {
   margin-top: 2.4em;
