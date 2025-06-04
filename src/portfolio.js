@@ -9,7 +9,7 @@ const about = {
   name: 'Joseph Ronselli',
   role: 'Full Stack Web Developer',
   description:
-    'Full-stack web developer with 10+ years of experience, including 5 years specializing in building scalable applications using React and AWS. Skilled in designing, developing, and deploying modern web solutions.',
+    'Full-stack developer with 10+ years of web development experience, specializing in React, Node.js, and AWS, with broad expertise across modern frameworks, tools, and architectures.',
   resume:
     'https://drive.google.com/file/d/19LXx_SgS2KuuHdWPmHFWsVumUgRRGq9W/view?usp=sharing',
   social: {
