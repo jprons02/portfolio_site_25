@@ -27,7 +27,7 @@ const projects = [
       'This business dashboard was built with a modern Vue 3 stack to demonstrate a full-featured data-driven admin panel using AWS AppSync and DynamoDB with GraphQL.',
     stack: ['Vue', 'Vuetify', 'GraphQL', 'DynamoDB', 'AWS Amplify', 'Vitest'],
     sourceCode: 'https://github.com/jprons02/demo-dashboard',
-    livePreview: 'https://staging.d1olp46bqvs6ps.amplifyapp.com/login',
+    livePreview: 'https://staging.dxuossquvgzet.amplifyapp.com/login',
   },
   {
     name: 'React Website',
