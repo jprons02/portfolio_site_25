@@ -22,6 +22,22 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
+    name: 'Blog Starter Kit',
+    description:
+      'A premium headless blog starter built with Next.js, TypeScript, Tailwind CSS, and Contentlayer, featuring custom dark mode, optimized for SEO, and AI-powered MDX post generation using the OpenAI and Pexels APIs.',
+    stack: [
+      'NextJS',
+      'Tailwind CSS',
+      'AWS Amplify CI/CD',
+      'TypeScript',
+      'Contentlayer2',
+      'OpenAI API',
+      'Pexels API',
+    ],
+    sourceCode: 'https://github.com/jprons02/blog-starter',
+    livePreview: 'https://main.d24q1reagwj6w8.amplifyapp.com/',
+  },
+  {
     name: 'Dashboard Demo',
     description:
       'This business dashboard was built with a modern Vue 3 stack to demonstrate a full-featured data-driven admin panel using AWS AppSync and DynamoDB with GraphQL.',
