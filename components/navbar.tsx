@@ -28,7 +28,7 @@ export function Navbar() {
       <h3 className='text-2xl font-bold'>
         <Link
           href={header.homepage}
-          className='text-foreground hover:text-primary transition-colors'
+          className='text-foreground relative pb-1 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full'
         >
           {header.title}
         </Link>
@@ -41,7 +41,7 @@ export function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className='text-foreground font-medium lowercase relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full'
+                className='text-foreground font-medium lowercase relative pb-1 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full'
               >
                 {link.label}
               </a>

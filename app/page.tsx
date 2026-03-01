@@ -6,6 +6,7 @@ import { Skills } from '@/components/skills'
 import { Contact } from '@/components/contact'
 import { Footer } from '@/components/footer'
 import { ScrollToTop } from '@/components/scroll-to-top'
+import { FadeIn } from '@/components/fade-in'
 
 export default function Home() {
   return (
@@ -15,9 +16,15 @@ export default function Home() {
       <main className='max-w-[1100px] w-[95%] mx-auto'>
         <About />
         <Separator className='mt-12 max-w-[80%] w-[660px] mx-auto' />
-        <Projects />
-        <Skills />
-        <Contact />
+        <FadeIn>
+          <Projects />
+        </FadeIn>
+        <FadeIn>
+          <Skills />
+        </FadeIn>
+        <FadeIn>
+          <Contact />
+        </FadeIn>
       </main>
 
       <ScrollToTop />
