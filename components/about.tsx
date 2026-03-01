@@ -31,7 +31,8 @@ export function About() {
           animate='visible'
           custom={0}
         >
-          Hi, I am <span className='text-primary'>{name}.</span>
+          Hi, I am <br className='sm:hidden' />
+          <span className='text-primary'>{name}.</span>
         </motion.h1>
       )}
 

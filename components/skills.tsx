@@ -31,7 +31,7 @@ export function Skills() {
             type='button'
             onClick={() => setCategory(key)}
             className={cn(
-              'relative px-3 py-2 text-lg font-semibold text-foreground transition-colors cursor-pointer',
+              'relative px-3 py-2 text-base font-semibold text-foreground transition-colors cursor-pointer uppercase',
               'after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:bg-primary after:origin-left after:transition-transform',
               category === key ? 'after:scale-x-100' : 'after:scale-x-0',
             )}
@@ -42,16 +42,18 @@ export function Skills() {
       </div>
 
       {/* Skills list */}
-      <ul className='flex flex-wrap justify-center gap-2 max-w-[600px] mx-auto'>
-        {currentSkills.map((skill) => (
-          <li
-            key={skill}
-            className='px-4 py-2 text-sm font-medium bg-card shadow-sm rounded-md hover:-translate-y-1 transition-transform'
-          >
-            {skill}
-          </li>
-        ))}
-      </ul>
+      <div className='min-h-[170px] sm:min-h-[88px]'>
+        <ul className='flex flex-wrap justify-center gap-2 max-w-[600px] mx-auto'>
+          {currentSkills.map((skill) => (
+            <li
+              key={skill}
+              className='px-4 py-2 text-sm font-medium bg-card shadow-sm rounded-md hover:-translate-y-1 transition-transform'
+            >
+              {skill}
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   )
 }

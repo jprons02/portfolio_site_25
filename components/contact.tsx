@@ -21,7 +21,7 @@ export function Contact() {
 
   return (
     <section id='contact' className='mt-16 sm:mt-20 flex flex-col items-center'>
-      <h2 className='text-center text-2xl font-bold uppercase mb-8 text-foreground-alt'>
+      <h2 className='text-center text-2xl font-bold uppercase mb-5 text-foreground-alt'>
         Contact
       </h2>
 

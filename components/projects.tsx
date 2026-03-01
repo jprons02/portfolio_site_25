@@ -15,7 +15,7 @@ function ProjectCard({ project }: { project: Project }) {
         </h3>
 
         {/* Description */}
-        <p className='mt-3 text-sm leading-relaxed text-foreground flex-1'>
+        <p className='mt-3 text-[12px] leading-relaxed text-foreground flex-1'>
           {project.description}
         </p>
 

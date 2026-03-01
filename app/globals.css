@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 @layer base {
   :root {
     --background: #fcfcfc;
@@ -46,9 +44,44 @@
 
   html {
     scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans antialiased;
+    line-height: 1.65;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+    letter-spacing: -0.02em;
+    color: var(--foreground-alt);
+  }
+
+  h1 {
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    @apply font-body;
+  }
+
+  /* Optional: use mono for skill/tech pills if you add these classNames */
+  .tech-pill,
+  .skill-pill,
+  .badge-mono {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+  }
+
+  /* Optional: uppercase section labels look sharper */
+  .section-label {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 }
