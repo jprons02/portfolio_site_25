@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 99%;
+    --foreground: 0 0% 33%;
+    --foreground-alt: 0 0% 27%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 27%;
+    --primary: 205 57% 43%;
+    --primary-foreground: 0 0% 100%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 205 57% 43%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 231 24% 19%;
+    --foreground: 240 11% 80%;
+    --foreground-alt: 240 30% 90%;
+    --card: 233 25% 23%;
+    --card-foreground: 240 30% 90%;
+    --primary: 226 38% 70%;
+    --primary-foreground: 231 24% 19%;
+    --muted: 233 25% 28%;
+    --muted-foreground: 240 11% 70%;
+    --border: 233 25% 30%;
+    --input: 233 25% 30%;
+    --ring: 226 38% 70%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
