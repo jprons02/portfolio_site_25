@@ -76,9 +76,9 @@ function EmailDialog() {
         <DialogTrigger asChild>
           <Button
             variant='outline'
-            className='lowercase border-primary text-primary hover:bg-primary hover:text-primary-foreground'
+            className='lowercase border-primary text-primary hover:bg-primary hover:text-primary-foreground border-2'
           >
-            Email me
+            <span className='font-bold'>Email me</span>
           </Button>
         </DialogTrigger>
 

@@ -70,10 +70,10 @@ export function About() {
           <Button
             variant='outline'
             asChild
-            className='lowercase border-primary text-primary hover:bg-primary hover:text-primary-foreground'
+            className='lowercase border-primary text-primary hover:bg-primary hover:text-primary-foreground border-2'
           >
             <a href={resume} target='_blank' rel='noopener noreferrer'>
-              Resume
+              <span className='font-bold'>Resume</span>
             </a>
           </Button>
         )}

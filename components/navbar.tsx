@@ -28,7 +28,7 @@ export function Navbar() {
       <h3 className='text-2xl font-bold'>
         <Link
           href={header.homepage}
-          className='text-foreground relative pb-1 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full'
+          className='text-foreground relative pb-1 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-0 after:bg-primary after:transition-all hover:after:w-full'
         >
           {header.title}
         </Link>
@@ -41,7 +41,7 @@ export function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className='text-foreground font-medium lowercase relative pb-1 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full'
+                className='text-foreground font-medium lowercase relative pb-0 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full'
               >
                 {link.label}
               </a>
@@ -55,8 +55,8 @@ export function Navbar() {
           onClick={toggleTheme}
           aria-label='toggle theme'
         >
-          <Sun className='h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0' />
-          <Moon className='absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100' />
+          <Moon className='h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0' />
+          <Sun className='absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100' />
         </Button>
 
         {/* Mobile hamburger */}
@@ -88,7 +88,7 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className='text-xl font-medium lowercase text-foreground hover:text-primary transition-colors'
+              className='text-xl font-medium lowercase text-foreground relative pb-0 after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full'
             >
               {link.label}
             </a>

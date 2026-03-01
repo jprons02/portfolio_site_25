@@ -1,52 +1,51 @@
 import { Github, ExternalLink } from 'lucide-react'
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-  CardFooter,
-} from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { projects, type Project } from '@/lib/portfolio'
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card className='flex flex-col text-center transition-transform duration-200 hover:-translate-y-2'>
-      <CardHeader>
-        <CardTitle className='text-xl'>{project.name}</CardTitle>
-      </CardHeader>
+    <div className='group relative flex flex-col rounded-xl border border-border bg-card overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1'>
+      {/* Accent top bar */}
+      <div className='h-1 bg-primary' />
 
-      <CardContent className='flex-1 space-y-4'>
-        <CardDescription className='text-sm leading-relaxed'>
+      <div className='flex flex-1 flex-col p-6'>
+        {/* Title */}
+        <h3 className='text-lg font-bold text-card-foreground'>
+          {project.name}
+        </h3>
+
+        {/* Description */}
+        <p className='mt-3 text-sm leading-relaxed text-foreground flex-1'>
           {project.description}
-        </CardDescription>
+        </p>
 
+        {/* Tech stack */}
         {project.stack.length > 0 && (
-          <div className='flex flex-wrap justify-center gap-1.5'>
+          <div className='mt-4 flex flex-wrap gap-1.5'>
             {project.stack.map((tech) => (
               <Badge
                 key={tech}
-                variant='outline'
-                className='border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors text-xs'
+                variant='secondary'
+                className='text-[11px] font-medium bg-muted text-muted-foreground'
               >
                 {tech}
               </Badge>
             ))}
           </div>
         )}
-      </CardContent>
+      </div>
 
-      <CardFooter className='justify-center gap-4'>
+      {/* Footer links */}
+      <div className='flex items-center gap-5 border-t border-border px-6 py-4'>
         {project.sourceCode && (
           <a
             href={project.sourceCode}
             target='_blank'
             rel='noopener noreferrer'
-            aria-label='source code'
-            className='text-foreground hover:text-primary transition-colors'
+            className='inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-primary transition-colors'
           >
-            <Github className='h-5 w-5' />
+            <Github className='h-3.5 w-3.5' />
+            Source
           </a>
         )}
         {project.livePreview && (
@@ -54,14 +53,14 @@ function ProjectCard({ project }: { project: Project }) {
             href={project.livePreview}
             target='_blank'
             rel='noopener noreferrer'
-            aria-label='live preview'
-            className='text-foreground hover:text-primary transition-colors'
+            className='inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-primary transition-colors'
           >
-            <ExternalLink className='h-5 w-5' />
+            <ExternalLink className='h-3.5 w-3.5' />
+            Live Demo
           </a>
         )}
-      </CardFooter>
-    </Card>
+      </div>
+    </div>
   )
 }
 

@@ -26,9 +26,9 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: 'Cow Alert',
+    name: 'Next.js Reporting Platform',
     description:
-      'A community reporting platform that allows residents to submit stray cattle sightings with required geolocation and photo verification. Images are validated using Google Cloud Vision to ensure submissions contain actual cows before triggering automated email alerts. Built with a scalable serverless architecture.',
+      'Community platform for reporting stray cattle sightings with geolocation, photo verification via Google Cloud Vision, and automated email alerts.',
     stack: [
       'Next.js',
       'TypeScript',
@@ -42,11 +42,11 @@ export const projects: Project[] = [
     livePreview: 'https://wholetthecowsout.com/',
   },
   {
-    name: 'NextJS Blog Website',
+    name: 'Next.js Blog Website',
     description:
-      'A premium headless blog starter built with Next.js, TypeScript, Tailwind CSS, and Contentlayer, featuring custom dark mode, optimized for SEO, and AI-powered MDX post generation using the OpenAI and Pexels APIs.',
+      'Headless blog starter with custom dark mode, SEO optimization, and AI-powered MDX post generation using OpenAI and Pexels APIs.',
     stack: [
-      'NextJS',
+      'Next.js',
       'Tailwind CSS',
       'AWS Amplify CI/CD',
       'TypeScript',
@@ -61,7 +61,7 @@ export const projects: Project[] = [
   {
     name: 'Vue Dashboard Demo',
     description:
-      'This business dashboard was built with a modern Vue 3 stack to demonstrate a full-featured data-driven admin panel using AWS AppSync and DynamoDB with GraphQL.',
+      'Data-driven admin dashboard built with Vue 3, AWS AppSync, and DynamoDB to demonstrate a full-featured business panel.',
     stack: ['Vue', 'Vuetify', 'GraphQL', 'DynamoDB', 'AWS Amplify', 'Vitest'],
     sourceCode: 'https://github.com/jprons02/demo-dashboard',
     livePreview: 'https://staging.dxuossquvgzet.amplifyapp.com/login',
@@ -70,13 +70,13 @@ export const projects: Project[] = [
 
 export const skills: Record<string, string[]> = {
   frontend: [
-    'NextJS',
+    'Next.js',
     'React',
     'Vue',
     'Redux',
     'Context hook',
-    'Javascript',
-    'Typescript',
+    'JavaScript',
+    'TypeScript',
     'HTML',
     'CSS',
     'Shadcn UI',
