@@ -24,7 +24,7 @@ export function Navbar() {
   const toggleTheme = () => setTheme(theme === 'dark' ? 'light' : 'dark')
 
   return (
-    <header className='flex h-24 max-w-[1100px] w-[95%] mx-auto items-center justify-between sm:h-32'>
+    <header className='relative z-[60] flex h-24 max-w-[1100px] w-[95%] mx-auto items-center justify-between sm:h-32'>
       <h3 className='text-2xl font-bold'>
         <Link
           href={header.homepage}
@@ -34,7 +34,7 @@ export function Navbar() {
         </Link>
       </h3>
 
-      <nav className='flex items-center'>
+      <nav className='relative z-[60] flex items-center'>
         {/* Desktop nav */}
         <ul className='hidden sm:flex items-center gap-6 mr-6'>
           {navLinks.map((link) => (
@@ -52,6 +52,7 @@ export function Navbar() {
         <Button
           variant='ghost'
           size='icon'
+          className={open ? 'hidden sm:inline-flex' : ''}
           onClick={toggleTheme}
           aria-label='toggle theme'
         >
@@ -74,15 +75,6 @@ export function Navbar() {
       {/* Mobile nav overlay */}
       {open && (
         <div className='fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 bg-background sm:hidden'>
-          <Button
-            variant='ghost'
-            size='icon'
-            className='absolute top-6 right-6'
-            onClick={() => setOpen(false)}
-            aria-label='close navigation'
-          >
-            <X className='h-6 w-6' />
-          </Button>
           {navLinks.map((link) => (
             <a
               key={link.href}
