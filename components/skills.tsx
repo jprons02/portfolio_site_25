@@ -47,7 +47,7 @@ export function Skills() {
           {currentSkills.map((skill) => (
             <li
               key={skill}
-              className='px-4 py-2 text-sm font-medium bg-card shadow-sm rounded-md hover:-translate-y-1 transition-transform'
+              className='px-4 py-2 text-sm font-medium bg-card shadow-[0_1px_2px_0_rgb(0_0_0/0.2)] rounded-md hover:-translate-y-1 transition-transform'
             >
               {skill}
             </li>
