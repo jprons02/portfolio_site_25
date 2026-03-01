@@ -7,7 +7,7 @@ export function Footer() {
         rel='noopener noreferrer'
         className='text-sm font-semibold text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full'
       >
-        Created By Joseph Ronselli
+        Created By Joey
       </a>
     </footer>
   )
