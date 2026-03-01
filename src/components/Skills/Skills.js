@@ -37,12 +37,19 @@ const Skills = () => {
         </button>
         <button
           type='button'
-          onClick={() => setCategory('tools')}
+          onClick={() => setCategory('cloud')}
           className={`skills__toggle-btn ${
-            category === 'tools' ? 'active' : ''
+            category === 'cloud' ? 'active' : ''
           }`}
         >
-          <h2 className='section__title'>Tools</h2>
+          <h2 className='section__title'>Cloud</h2>
+        </button>
+        <button
+          type='button'
+          onClick={() => setCategory('ai')}
+          className={`skills__toggle-btn ${category === 'ai' ? 'active' : ''}`}
+        >
+          <h2 className='section__title'>AI</h2>
         </button>
       </div>
 
