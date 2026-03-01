@@ -31,7 +31,7 @@ export function Skills() {
             type='button'
             onClick={() => setCategory(key)}
             className={cn(
-              'relative px-3 py-2 text-base font-semibold text-foreground transition-colors cursor-pointer uppercase',
+              'relative px-3 py-2 text-[14px] md:text-base font-semibold text-foreground transition-colors cursor-pointer uppercase',
               'after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:bg-primary after:origin-left after:transition-transform',
               category === key ? 'after:scale-x-100' : 'after:scale-x-0',
             )}

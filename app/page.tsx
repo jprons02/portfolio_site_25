@@ -10,7 +10,7 @@ import { FadeIn } from '@/components/fade-in'
 
 export default function Home() {
   return (
-    <div id='top'>
+    <div id='top' className='px-3'>
       <Navbar />
 
       <main className='max-w-[1100px] w-[95%] mx-auto'>
