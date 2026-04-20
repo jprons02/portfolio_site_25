@@ -94,7 +94,7 @@ export const skills: Record<string, string[]> = {
     'AWS DynamoDB',
     'Vercel',
   ],
-  ai: ['ChatGPT Plus', 'Github Copilot Pro+', 'Github Spec-kit'],
+  ai: ['Claude', 'ChatGPT', 'Cursor', 'Github Copilot', 'Github Spec-kit'],
 }
 
 export const contact = {
