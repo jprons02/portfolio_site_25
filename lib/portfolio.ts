@@ -25,8 +25,26 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    {
+    name: 'TOFTW — Tournament Organizer SaaS',
+    description:
+      'Multi-tenant SaaS platform for creating and managing recreational and competitive tournaments.',
+    stack: [
+      'Next.js',
+      'TypeScript',
+      'Supabase',
+      'Stripe',
+      'Square API',
+      'Resend',
+      'OpenAI API',
+      'Tailwind CSS',
+      'Vercel',
+    ],
+    //sourceCode: 'https://github.com/jprons02/to_ftw',
+    livePreview: 'https://toftw.com/',
+  },
   {
-    name: 'Next.js Reporting Platform',
+    name: 'Reporting Platform',
     description:
       'Community platform for reporting stray cattle sightings with geolocation, photo verification via Google Cloud Vision, and automated email alerts.',
     stack: [
@@ -42,7 +60,7 @@ export const projects: Project[] = [
     livePreview: 'https://wholetthecowsout.com/',
   },
   {
-    name: 'Next.js Blog Website',
+    name: 'Blog Website',
     description:
       'Headless blog starter with custom dark mode, SEO optimization, and AI-powered MDX post generation using OpenAI and Pexels APIs.',
     stack: [
@@ -59,12 +77,20 @@ export const projects: Project[] = [
     livePreview: 'https://www.mygovblog.com/',
   },
   {
-    name: 'Vue Dashboard Demo',
+    name: 'Dashboard Demo',
     description:
       'Data-driven admin dashboard built with Vue 3, AWS AppSync, and DynamoDB to demonstrate a full-featured business panel.',
     stack: ['Vue', 'Vuetify', 'GraphQL', 'DynamoDB', 'AWS Amplify', 'Vitest'],
     sourceCode: 'https://github.com/jprons02/demo-dashboard',
     livePreview: 'https://staging.dxuossquvgzet.amplifyapp.com/login',
+  },
+  {
+    name: 'Marketing Portfolio',
+    description:
+      'Marketing portfolio website built with Next.js, showcasing various projects and case studies.',
+    stack: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Vercel'],
+    //sourceCode: 'https://github.com/jprons02/marketing-portfolio',
+    livePreview: 'https://kronselli.com/',
   },
 ]
 
@@ -94,7 +120,7 @@ export const skills: Record<string, string[]> = {
     'AWS DynamoDB',
     'Vercel',
   ],
-  ai: ['Claude', 'ChatGPT', 'Cursor', 'Github Copilot', 'Github Spec-kit'],
+  ai: ['Claude Code', 'Codex', 'Cursor', 'Skills'],
 }
 
 export const contact = {
