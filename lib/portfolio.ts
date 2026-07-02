@@ -44,6 +44,22 @@ export const projects: Project[] = [
     livePreview: 'https://toftw.com/',
   },
   {
+    name: 'Youbundle',
+    description:
+      'Landing page for a streaming bundle product concept, built to showcase customizable TV packages, budget-friendly entertainment options, and subscription management features.',
+    stack: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Vercel'],
+    //sourceCode: 'https://github.com/jprons02/marketing-portfolio',
+    livePreview: 'https://youbundle.com/',
+  },
+  {
+    name: 'Mediapay',
+    description:
+      'Landing page for a streaming payment product concept, designed to explain the value of managing subscriptions, upcoming bills, and secure payment features through a polished marketing experience.',
+    stack: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Vercel'],
+    //sourceCode: 'https://github.com/jprons02/marketing-portfolio',
+    livePreview: 'https://www.mediapay.tv/',
+  },
+  {
     name: 'Reporting Platform',
     description:
       'Community platform for reporting stray cattle sightings with geolocation, photo verification via Google Cloud Vision, and automated email alerts.',
