@@ -11,7 +11,7 @@ export const about = {
   resume:
     'https://drive.google.com/file/d/19LXx_SgS2KuuHdWPmHFWsVumUgRRGq9W/view?usp=sharing',
   social: {
-    linkedin: 'https://www.linkedin.com/in/joseph-ronselli/',
+    linkedin: 'https://www.linkedin.com/in/jronselli/',
     github: 'https://github.com/jprons02',
   },
 }
